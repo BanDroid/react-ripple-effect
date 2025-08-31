@@ -1,0 +1,36 @@
+:root {
+    --ripple-light: #FFFFFF;
+    --ripple-dark: #000000;
+}
+
+.md-ripples {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.ripples-light .ripple {
+    background-color: var(--ripple-light);
+}
+.ripples-dark .ripple {
+    background-color: var(--ripple-dark);
+}
+
+.ripple {
+    opacity: .16;
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: ripple 0.3s ease-out;
+}
+
+@keyframes ripple {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}

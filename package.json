@@ -1,17 +1,37 @@
 {
-  "name": "myapp",
-  "private": true,
-  "version": "0.0.0",
+  "name": "react-ripple-effect",
+  "private": false,
+  "version": "0.0.1",
+  "description": "React component for ripple effect inspired by Google Material Design",
   "type": "module",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles": "./dist/style.css"
+  },
+  "files": [
+    "/dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/node": "^24.3.0",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "vite-plugin-dts": "^4.5.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
