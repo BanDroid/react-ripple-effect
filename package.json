@@ -1,7 +1,7 @@
 {
   "name": "ripple-effect-react",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "React component for ripple effect inspired by Google Material Design",
   "type": "module",
   "main": "dist/index.umd.js",
