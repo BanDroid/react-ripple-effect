@@ -19,6 +19,7 @@
 }
 
 .ripple {
+    background-color: var(--ripple-dark);
     opacity: .16;
     position: absolute;
     border-radius: 50%;
