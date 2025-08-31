@@ -21,7 +21,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/BanDroid/react-ripple-effect",
+  "homepage": "https://github.com/BanDroid/ripple-effect-react",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
