@@ -1,1 +1,2 @@
-export { default as Ripple } from "./components/Ripple";
+"use client";
+export { default as RippleListener } from "./components/Ripple";
